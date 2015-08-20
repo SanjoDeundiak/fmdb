@@ -22,13 +22,6 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		42C043661B861504002C4EBF /* FMDatabase+FTS3.h in Headers */ = {isa = PBXBuildFile; fileRef = 42C0434C1B861504002C4EBF /* FMDatabase+FTS3.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		42C043671B861504002C4EBF /* FMDatabase+FTS3.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C0434D1B861504002C4EBF /* FMDatabase+FTS3.m */; };
-		42C043681B861504002C4EBF /* FMTokenizers.h in Headers */ = {isa = PBXBuildFile; fileRef = 42C0434E1B861504002C4EBF /* FMTokenizers.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		42C043691B861504002C4EBF /* FMTokenizers.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C0434F1B861504002C4EBF /* FMTokenizers.m */; };
-		42C0436A1B861504002C4EBF /* fts3_tokenizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 42C043501B861504002C4EBF /* fts3_tokenizer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		42C0436B1B861504002C4EBF /* FMDatabase+InMemoryOnDiskIO.h in Headers */ = {isa = PBXBuildFile; fileRef = 42C043521B861504002C4EBF /* FMDatabase+InMemoryOnDiskIO.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		42C0436C1B861504002C4EBF /* FMDatabase+InMemoryOnDiskIO.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C043531B861504002C4EBF /* FMDatabase+InMemoryOnDiskIO.m */; };
 		42C0436F1B861504002C4EBF /* FMDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = 42C043581B861504002C4EBF /* FMDatabase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42C043701B861504002C4EBF /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C043591B861504002C4EBF /* FMDatabase.m */; };
 		42C043711B861504002C4EBF /* FMDatabaseAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 42C0435A1B861504002C4EBF /* FMDatabaseAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -66,13 +59,6 @@
 
 /* Begin PBXFileReference section */
 		42C0432C1B86148F002C4EBF /* libfmdb.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libfmdb.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		42C0434C1B861504002C4EBF /* FMDatabase+FTS3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FMDatabase+FTS3.h"; sourceTree = "<group>"; };
-		42C0434D1B861504002C4EBF /* FMDatabase+FTS3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FMDatabase+FTS3.m"; sourceTree = "<group>"; };
-		42C0434E1B861504002C4EBF /* FMTokenizers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMTokenizers.h; sourceTree = "<group>"; };
-		42C0434F1B861504002C4EBF /* FMTokenizers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMTokenizers.m; sourceTree = "<group>"; };
-		42C043501B861504002C4EBF /* fts3_tokenizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fts3_tokenizer.h; sourceTree = "<group>"; };
-		42C043521B861504002C4EBF /* FMDatabase+InMemoryOnDiskIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FMDatabase+InMemoryOnDiskIO.h"; sourceTree = "<group>"; };
-		42C043531B861504002C4EBF /* FMDatabase+InMemoryOnDiskIO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FMDatabase+InMemoryOnDiskIO.m"; sourceTree = "<group>"; };
 		42C043581B861504002C4EBF /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
 		42C043591B861504002C4EBF /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
 		42C0435A1B861504002C4EBF /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
@@ -116,40 +102,9 @@
 		42C043491B861504002C4EBF /* src */ = {
 			isa = PBXGroup;
 			children = (
-				42C0434A1B861504002C4EBF /* extra */,
 				42C043571B861504002C4EBF /* fmdb */,
 			);
 			path = src;
-			sourceTree = "<group>";
-		};
-		42C0434A1B861504002C4EBF /* extra */ = {
-			isa = PBXGroup;
-			children = (
-				42C0434B1B861504002C4EBF /* fts3 */,
-				42C043511B861504002C4EBF /* InMemoryOnDiskIO */,
-			);
-			path = extra;
-			sourceTree = "<group>";
-		};
-		42C0434B1B861504002C4EBF /* fts3 */ = {
-			isa = PBXGroup;
-			children = (
-				42C0434C1B861504002C4EBF /* FMDatabase+FTS3.h */,
-				42C0434D1B861504002C4EBF /* FMDatabase+FTS3.m */,
-				42C0434E1B861504002C4EBF /* FMTokenizers.h */,
-				42C0434F1B861504002C4EBF /* FMTokenizers.m */,
-				42C043501B861504002C4EBF /* fts3_tokenizer.h */,
-			);
-			path = fts3;
-			sourceTree = "<group>";
-		};
-		42C043511B861504002C4EBF /* InMemoryOnDiskIO */ = {
-			isa = PBXGroup;
-			children = (
-				42C043521B861504002C4EBF /* FMDatabase+InMemoryOnDiskIO.h */,
-				42C043531B861504002C4EBF /* FMDatabase+InMemoryOnDiskIO.m */,
-			);
-			path = InMemoryOnDiskIO;
 			sourceTree = "<group>";
 		};
 		42C043571B861504002C4EBF /* fmdb */ = {
@@ -177,15 +132,11 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42C0436A1B861504002C4EBF /* fts3_tokenizer.h in Headers */,
-				42C043661B861504002C4EBF /* FMDatabase+FTS3.h in Headers */,
 				42C043711B861504002C4EBF /* FMDatabaseAdditions.h in Headers */,
 				42C043771B861504002C4EBF /* FMDB.h in Headers */,
 				42C043731B861504002C4EBF /* FMDatabasePool.h in Headers */,
 				42C043751B861504002C4EBF /* FMDatabaseQueue.h in Headers */,
-				42C0436B1B861504002C4EBF /* FMDatabase+InMemoryOnDiskIO.h in Headers */,
 				42C0436F1B861504002C4EBF /* FMDatabase.h in Headers */,
-				42C043681B861504002C4EBF /* FMTokenizers.h in Headers */,
 				42C043781B861504002C4EBF /* FMResultSet.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,13 +232,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42C043691B861504002C4EBF /* FMTokenizers.m in Sources */,
-				42C043671B861504002C4EBF /* FMDatabase+FTS3.m in Sources */,
 				42C043701B861504002C4EBF /* FMDatabase.m in Sources */,
 				42C043791B861504002C4EBF /* FMResultSet.m in Sources */,
 				42C043741B861504002C4EBF /* FMDatabasePool.m in Sources */,
 				42C043721B861504002C4EBF /* FMDatabaseAdditions.m in Sources */,
-				42C0436C1B861504002C4EBF /* FMDatabase+InMemoryOnDiskIO.m in Sources */,
 				42C043761B861504002C4EBF /* FMDatabaseQueue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -455,6 +403,7 @@
 				42C0437F1B86170E002C4EBF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
